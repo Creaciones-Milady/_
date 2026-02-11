@@ -21,7 +21,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 8%;
-    background: #ffffff; /* Barra blanca sólida para destacar logo y nombre */
+    background: #ffffff;
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,12 +31,11 @@ nav {
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
-.logo-img { height: 65px; width: auto; border-radius: 50%; }
+.logo-img { height: 60px; width: auto; }
 
-/* Estilo mejorado para el nombre en la barra */
 .nav-brand-central {
     font-family: 'Dancing Script', cursive;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: var(--rosa-logo);
     position: absolute;
     left: 50%;
@@ -51,21 +50,20 @@ nav ul li a {
     font-weight: 600; 
     font-size: 0.8rem;
     text-transform: uppercase;
-    transition: 0.3s;
 }
 
 .btn-wa-nav { 
     background: var(--verde-wa); 
     color: white !important; 
-    padding: 10px 22px; 
+    padding: 10px 20px; 
     border-radius: 50px; 
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 /* --- HERO --- */
 .hero { 
     height: 95vh; 
-    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('img/fondo.jpg'); 
+    /* RESTAURADO A .JPEG */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/Fondo.jpeg'); 
     background-size: cover; 
     background-position: center; 
     display: flex; 
@@ -76,95 +74,52 @@ nav ul li a {
     position: relative;
 }
 
-/* Estilo elegante sobre el título principal */
 .hero-brand-top {
     font-family: 'Dancing Script', cursive;
     font-size: 2.8rem;
-    margin-bottom: -15px;
-    color: white;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    margin-bottom: -10px;
 }
 
-.hero-content h1 { 
-    font-family: 'Playfair Display', serif; 
-    font-size: 5rem; 
-    margin-bottom: 1.2rem; 
-    line-height: 1.1;
-    text-shadow: 2px 2px 15px rgba(0,0,0,0.2);
-}
-
-.description-refined { 
-    max-width: 650px; 
-    margin: 0 auto; 
-    font-weight: 300; 
-    font-size: 1.15rem; 
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-}
+.hero-content h1 { font-family: 'Playfair Display', serif; font-size: 4.8rem; margin-bottom: 1.2rem; }
+.description-refined { max-width: 650px; margin: 0 auto; font-size: 1.15rem; font-weight: 300; }
 
 .btn-glow { 
-    background: var(--rosa-logo); 
-    color: white; 
-    padding: 18px 45px; 
-    text-decoration: none; 
-    border-radius: 50px; 
-    font-weight: bold; 
-    display: inline-block; 
-    margin-top: 35px; 
-    transition: 0.4s;
-    box-shadow: 0 5px 20px rgba(233, 90, 154, 0.4);
+    background: var(--rosa-logo); color: white; padding: 18px 45px; 
+    text-decoration: none; border-radius: 50px; font-weight: bold; 
+    display: inline-block; margin-top: 30px; transition: 0.3s;
 }
-.btn-glow:hover { transform: translateY(-3px); box-shadow: 0 8px 25px var(--rosa-logo); }
+.btn-glow:hover { transform: translateY(-3px); box-shadow: 0 5px 20px var(--rosa-logo); }
 
 .hero-wave { position: absolute; bottom: 0; left: 0; width: 100%; line-height: 0; transform: rotate(180deg); }
 .hero-wave svg { display: block; width: 100%; height: 60px; }
 
 /* --- GRID --- */
 .products { padding: 9rem 5% 5rem; }
-.section-title { 
-    text-align: center; font-family: 'Playfair Display', serif; 
-    font-size: 3rem; margin-bottom: 4.5rem; color: var(--negro-lujo);
-}
+.section-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 4.5rem; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-.card { 
-    background: white; border-radius: 25px; overflow: hidden; 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05); text-align: center; transition: 0.4s; 
-}
-.card:hover { transform: translateY(-15px); box-shadow: 0 20px 45px rgba(233, 90, 154, 0.1); }
+.card { background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.05); text-align: center; transition: 0.4s; }
+.card:hover { transform: translateY(-10px); }
 
 .product-img { width: 100%; height: 380px; }
 .product-img img { width: 100%; height: 100%; object-fit: cover; }
 .product-info { padding: 25px; }
 .product-info h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 15px; }
 
-.btn-buy { 
-    text-decoration: none; color: white; background: var(--negro-lujo); 
-    padding: 12px 30px; border-radius: 50px; font-size: 0.85rem; transition: 0.3s; 
-}
-.btn-buy:hover { background: var(--rosa-logo); }
+.btn-buy { text-decoration: none; color: white; background: var(--negro-lujo); padding: 12px 30px; border-radius: 50px; font-size: 0.85rem; }
 
 /* --- ARCO FINAL --- */
 .arch-container { display: flex; justify-content: center; padding: 50px 0; }
 .arch-box { 
-    max-width: 750px; width: 90%; background: var(--rosa-suave); 
-    padding: 90px 40px 70px; text-align: center;
-    border-radius: 500px 500px 50px 50px;
-    border: 2px solid #fce4ec;
-    box-shadow: 0 -10px 50px rgba(233, 90, 154, 0.12);
+    max-width: 750px; width: 90%; background: var(--rosa-suave); padding: 90px 40px 70px;
+    text-align: center; border-radius: 500px 500px 50px 50px; border: 2px solid #fce4ec;
 }
 .arch-icon { font-size: 2.5rem; color: var(--rosa-logo); margin-bottom: 15px; }
-.arch-title { font-family: 'Playfair Display', serif; font-size: 2.4rem; margin: 20px 0 35px; color: var(--negro-lujo); }
-.btn-wa-final { 
-    background: var(--verde-wa); color: white; padding: 18px 45px; 
-    text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem;
-    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); transition: 0.3s;
-}
+.arch-title { font-family: 'Playfair Display', serif; font-size: 2.4rem; margin: 20px 0 35px; }
+.btn-wa-final { background: var(--verde-wa); color: white; padding: 18px 45px; text-decoration: none; border-radius: 50px; font-weight: bold; }
 
-footer { background: var(--negro-lujo); color: #777; text-align: center; padding: 4rem 1rem; margin-top: 50px; }
+footer { background: var(--negro-lujo); color: #777; text-align: center; padding: 4rem; }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-    .nav-brand-central { display: none; } /* Ocultar en móvil por espacio */
-    .hero-content h1 { font-size: 3.2rem; }
-    .hero-brand-top { font-size: 2rem; }
+    .nav-brand-central { display: none; }
+    .hero-content h1 { font-size: 3rem; }
 }
