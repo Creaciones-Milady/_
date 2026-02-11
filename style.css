@@ -21,7 +21,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 8%;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,7 +32,7 @@ nav {
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
-.logo-img { height: 60px; width: auto; }
+.logo-img { height: 65px; width: auto; }
 
 .nav-brand-central {
     font-family: 'Dancing Script', cursive;
@@ -62,8 +63,7 @@ nav ul li a {
 /* --- HERO --- */
 .hero { 
     height: 95vh; 
-    /* RESTAURADO A .JPEG */
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/Fondo.jpeg'); 
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('img/fondo.jpg'); 
     background-size: cover; 
     background-position: center; 
     display: flex; 
@@ -74,13 +74,8 @@ nav ul li a {
     position: relative;
 }
 
-.hero-brand-top {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.8rem;
-    margin-bottom: -10px;
-}
-
-.hero-content h1 { font-family: 'Playfair Display', serif; font-size: 4.8rem; margin-bottom: 1.2rem; }
+.hero-brand-top { font-family: 'Dancing Script', cursive; font-size: 2.8rem; margin-bottom: -10px; }
+.hero-content h1 { font-family: 'Playfair Display', serif; font-size: 4.5rem; margin-bottom: 1.2rem; }
 .description-refined { max-width: 650px; margin: 0 auto; font-size: 1.15rem; font-weight: 300; }
 
 .btn-glow { 
@@ -91,9 +86,9 @@ nav ul li a {
 .btn-glow:hover { transform: translateY(-3px); box-shadow: 0 5px 20px var(--rosa-logo); }
 
 .hero-wave { position: absolute; bottom: 0; left: 0; width: 100%; line-height: 0; transform: rotate(180deg); }
-.hero-wave svg { display: block; width: 100%; height: 60px; }
+.hero-wave svg { display: block; width: 100%; height: 70px; }
 
-/* --- GRID --- */
+/* --- CATÁLOGO --- */
 .products { padding: 9rem 5% 5rem; }
 .section-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 4.5rem; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
